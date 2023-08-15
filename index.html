@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>canvas-game</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class=" bg-black">
+
+    <div class="fixed text-white text-sm ml-3 mt-3 select-none"><span>Score: </span><span id="scoreEl">0</span></div>
+    <div id="modalEl" class="fixed inset-0 flex items-center justify-center">
+        <div class="bg-white max-w-md w-full text-center p-6">
+            <h1 id="finalScoreEl"class="text-4xl font-bold">0</h1>
+            <p class="text-sm text-gray-700">Points</p>
+            <div class="bg-blue">
+                <button id="startGameBtn" class="bg-blue-500 p-2 border-radius-2 text-white w-full py-3 rounded-full mt-3">Start Game</button>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
 
